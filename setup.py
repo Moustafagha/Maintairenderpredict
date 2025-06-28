@@ -1,0 +1,44 @@
+
+from setuptools import setup, find_packages
+
+setup(
+    name='maintai_predictive_failure',
+    version='0.1.0',
+    packages=find_packages(where='backend/src'),
+    package_dir={{'': 'backend/src'}},
+    install_requires=[
+        'blinker==1.9.0',
+        'certifi==2025.6.15',
+        'charset-normalizer==3.4.2',
+        'click==8.2.1',
+        'Flask==3.1.1',
+        'flask-cors==6.0.0',
+        'Flask-SQLAlchemy==3.1.1',
+        'greenlet==3.2.3',
+        'idna==3.10',
+        'itsdangerous==2.2.0',
+        'Jinja2==3.1.6',
+        'joblib==1.5.1',
+        'MarkupSafe==3.0.2',
+        'numpy==2.3.1',
+        'pandas==2.3.0',
+        'PyJWT==2.10.1',
+        'python-dateutil==2.9.0.post0',
+        'pytz==2025.2',
+        'requests==2.32.4',
+        'scikit-learn==1.7.0',
+        'scipy==1.16.0',
+        'six==1.17.0',
+        'SQLAlchemy==2.0.41',
+        'threadpoolctl==3.6.0',
+        'typing_extensions==4.14.0',
+        'tzdata==2025.2',
+        'urllib3==2.5.0',
+        'Werkzeug==3.1.3',
+    ],
+    entry_points={
+        'console_scripts': [
+            'maintai=maintai_predictive_failure.main:app',
+        ],
+    },
+)
